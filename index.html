@@ -9,14 +9,20 @@
     <title>Dashboard</title>
 </head>
 <body>
-   <div class="menu">
+   <div class="menu" >
+     <div class="toggle-btn">
+      
+       <button id="toggle"><i class="fa-sharp-duotone fa-regular fa-toggle-on"></i></button>
+
+     </div>
+
      <ul>
        <li class="profile">
            <div class="imgbox">
              <img src="prof.webp" alt="profile photo">
            </div>
 
-           <div>
+           <div >
              <h2>Eyad Jawabra</h2>
            </div>
        </li>
@@ -93,7 +99,7 @@
       <div class="data-info">
         <div class="box">
           <i class="fas fa-user"></i>
-         <div class="data" 
+         <div class="data" >
         <p>User</p>
         <span>100</span>
          </div> 
@@ -186,7 +192,15 @@
    
 
 
+  <script>
+    const togglebtn=document.getElementById("toggle");
+    const menu=document.querySelector(".menu");
 
+    togglebtn.addEventListener("click", () =>{
+      menu.classList.toggle("expanded");
+    })
+
+  </script>
 
 
 
