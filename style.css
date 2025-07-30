@@ -169,3 +169,149 @@ th{
     color:#001
 
 }
+@media screen and (max-width:430px){
+body{
+    background-color:#001;
+    display:flex;
+    flex-direction: column;
+}
+.imgbox{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid white;
+    flex-shrink: 0;
+    
+
+}
+.imgbox img{
+    width:100%;
+    margin-bottom:300px;
+}
+
+.profile{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100px;
+    
+}
+.profile h2{
+    font-size:16px;
+    text-transform: capitalize;
+
+}
+
+.menu{
+    background-color:#123;
+    width:100vw;
+    height:45px;
+    overflow:hidden;
+}
+ .menu.expanded {
+    height:430px;
+    width:100vw; 
+    padding:16px;
+ }
+ .menu.expanded .profile h2{
+       margin:2px;
+       margin-bottom:20px;
+       color:red;
+ }
+ #toggle{
+    display:block;
+    margin:10px 10px 0px 0px;
+ }
+
+
+ .menu ul{
+    list-style:none;
+    position:relative;
+    height:30px;
+
+ }
+ 
+ .menu ul li a{
+    display:block;
+    text-decoration: none;
+    padding :8px;
+    border-radius:4px;
+    align-items:center;
+    display:flex;
+    font-size:14px;
+    margin:5px 0;
+ }
+.menu ul li a i{
+    font-size:15px;
+}
+
+.log-out{
+    position:absolute;
+    bottom: 0;
+    top:370px;
+    width: 100%;
+}
+
+.content{
+    width:100%;
+    margin:8px;
+}
+
+.title-info{
+    background-color:rgb(4,129,255);  
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin:10px 0;
+}
+
+.data-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:6px;
+}
+
+.data-info .box{
+    background-color: #123;
+    flex-basis:60px;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.data-info .box i{
+    font-size: 25px;
+}
+
+.data-info .box{
+    text-align: center;
+}
+
+.data-info .box .data span,p{
+    font-size: 16px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing:5px;
+}
+
+td,th{
+    background-color:#123;
+    height:30px;
+    border-radius:6px;
+}
+
+    
+ }
+
+
